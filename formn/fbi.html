@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2.1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="firstt21">
+        <p><center>First Brief Investigation Report for Neonatal & Child Death</center><br>
+    </div>
+        <table class="third" align="center" padding="10px" cellpadding="10">
+        <tr><td><center>A.  Background Information</center></td></tr></table>
+        <form action="update" method="POST">
+        <table align="center" padding="10px" cellpadding="10">
+	   <tr>
+		<td>Name Of The Child:</td> 
+		<td><input type="text" placeholder="Child Name" name="nameOfTheChild" required></input></td></tr>
+        
+		<tr><td>Age:</td>
+     
+        <td><select  id="one" name="year">
+        <option value="null">--Select an Year--</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        </select>
+     
+        <select disabled="disabled" id="two" name="month">
+        <option value="null">--Select a Month--</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        </select>
+        
+        <select disabled="disabled" id="three" name="days">
+        <option value="null">--Select no. of Days--</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        </select>
+		</td></tr>
+        <tr>
+        	<td>Gender:</td>
+        	<td>
+        		<input type="radio" name=gender value="male">Male 
+                <input type="radio" name=gender value="female">Female
+            </td></tr>
+
+             <tr><td>Address:</td>
+                <td><input type="text" name="pincode" placeholder="Pincode">
+                <input type="text" name="district" placeholder="District" required>
+                <input type="text" name="state" placeholder="State" required>
+                <input type="text" name="locality" placeholder="Locality" required></td></tr>
+            <tr>
+        	<td>Order of Birth:</td>
+        	<td>
+                <input type="radio" name="order" value="1">1  &nbsp&nbsp
+                <input type="radio" name="order" value="2">2  &nbsp&nbsp
+                <input type="radio" name="order" value="3">3  &nbsp&nbsp
+                <input type="radio" name="order" value="4">4  &nbsp&nbsp
+                <input type="radio" name="order" value="5">5  &nbsp&nbsp
+                <input type="radio" name="order" value="more">More</td></tr>
+            <tr><td>Caste:</td>
+            	<td>
+            		<input type="radio" name="caste" value="SC">SC    &nbsp&nbsp
+                    <input type="radio" name="caste" value="ST">ST    &nbsp&nbsp
+                    <input type="radio" name="caste" value="OBC">OBC  &nbsp&nbsp
+                    <input type="radio" name="caste" value="General">General    &nbsp&nbsp
+                </td></tr>
+            <tr>
+            	<td>Immunization Status:</td>
+            	<td>
+            		<input type="checkbox" name="immunization" value="Penta 1">Penta 1    &nbsp&nbsp
+                    <input type="checkbox" name="immunization" value="Penta 2">Penta 2    &nbsp&nbsp
+                    <input type="checkbox" name="immunization" value="Penta 3">Penta 3    &nbsp&nbsp
+                    <input type="checkbox" name="immunization" value="MR 1">MR 1          &nbsp&nbsp
+                    <input type="checkbox" name="immunization" value="Mr Booster">MR Booster
+                </td>
+            </tr>
+            <tr><td>Does Family Have a Below Poverty Line card(BPL)?</td>
+            	<td>
+            		<input type="radio" name="belowPovertyLineCard" value="Yes">Yes             &nbsp&nbsp
+                    <input type="radio" name="belowPovertyLineCard" value="No">No               &nbsp&nbsp
+            	</td></tr>
+            <tr>
+            	<td>Weight (if recorded in the MCP card):</td>
+            	<td><input type="number" name="weight" placeholder="Weight"></td>
+            </tr>
+            <tr>
+            	<td>Growth Curve (fill for child less than 3 years; check MCP card) : </td>
+            	<td>
+            		<input type="checkbox" name="growthCurve" value="Green Zone">Green Zone  &nbsp&nbsp
+                    <input type="checkbox" name="growthCurve" value="Yellow Zone">Yellow Zone  &nbsp&nbsp
+                    <input type="checkbox" name="growthCurve" value="Orange Zone">Orange Zone  &nbsp&nbsp
+                </td></tr>
+                <tr><td>Any Past Illness?</td>
+                	<td>
+                		<div id="i">
+                        <input type="radio" name="pastIllness" id="y" onchange="maketext()" value="Yes">Yes<br>
+                        <input type="radio" name="pastIllness" onchange="maketext()" Value="No">No<br>
+                       </div></td></tr></table>
+
+                       <table class="third" align="center" padding="10px" cellpadding="10">
+                        <tr><td><center>B. Symptoms during illness</center></td></tr></table> 
+                        <table align="center" padding="25px" cellpadding="10">
+                        <tr>
+                            <th>Symptoms during illness</th>
+                            <th>Duration of Symptoms</th>
+                        </tr>
+                        <tr>
+                            <td>Inability To Feed</td>
+                            <td><input type="text" placeholder="No. Of Days" name="inabilityToFeed"></td>
+                        </tr>
+                        <tr>
+                            <td>Fever</td>
+                            <td><input type="text" placeholder="No. Of Days" name=fever></td>
+                        </tr>
+                        <tr>
+                            <td>Loose Stools</td>
+                            <td><input type="text" placeholder="No. Of Days" name="looseStools"></td>
+                        </tr>
+                        <tr>
+                            <td>Vomating</td>
+                            <td><input type="text" placeholder="No. Of Days" name="vomiting"></td>
+                        </tr>
+                        <tr>
+                            <td>Fast breathing</td>
+                            <td><input type="text" placeholder="No. Of Days" name="fastBreathing"></td>
+                        </tr>
+                        <tr>
+                            <td>Convulsions</td>
+                            <td><input type="text" placeholder="No. Of Days" name="convulsions"></td>
+                        </tr>
+                        <tr>
+                            <td>Appearance of Skin rashes</td>
+                            <td><input type="text" placeholder="No. Of Days" name="skinRashes"></td>
+                        </tr>
+                        <tr>
+                            <td>Injury (like fractures, wounds)</td>
+                            <td><input type="text" placeholder="No. Of Days" name="injury"></td>
+                        </tr>
+                        <tr>
+                            <td>Any other symptoms</td>
+                            <td><textarea rows="2" columns="2" placeholder="Other symptoms" name="otherSymptoms"></textarea></td>
+                        </tr></table>   
+
+
+<table class="third" align="center" padding="10px" cellpadding="10">
+    <tr><td><center>C. Details of treatment:</center></td></tr></table>
+    <table align="center" padding="25px" cellpadding="10">
+        <tr><td></td>
+            <td>Whether treatment for illness was taken or not?</td>
+                <td><input type="radio" name="treatmentTaken" value="Yes">Yes
+                    <input type="radio" name="treatmentTaken" value="No">No</td>
+            </td></tr>
+            <tr><td></td><th>If yes, where was the child treated:</th></tr>
+            <tr><td></td>
+                <td>Public Health Facility:</td>
+                <td>
+                    <input type="radio" name="whereWasTheChildTreated" value="PHC">PHC<br>
+                    <input type="radio" name="whereWasTheChildTreated" value="CHC">CHC<br>
+                    <input type="radio" name="whereWasTheChildTreated" value="DH">DH<br>
+                    <input type="radio" name="whereWasTheChildTreated" value="SDH/Taluqa Hospital">SDH/Taluqa Hospital<br>
+                </td>
+            </tr>
+            <tr><td></td><td>Private Hospital/ Nursing Home</td>
+                <td><input type="checkbox" name="whereWasTheChildTreated" value="Private Hospital/ Nursing Home" ></td>
+            </tr>
+            <tr><td></td>
+                <td>Qualified allopathic private practitioner</td>
+                <td> <input type="checkbox" name="whereWasTheChildTreated" value="Qualified allopathic private practitioner"></td>
+            </tr>
+            <tr><td></td>
+                <td>AYUSH practitioner</td>
+                <td><input type="checkbox" name="whereWasTheChildTreated" value="AYUSH practitioner"></td>
+            </tr>
+            <tr><td></td>
+                <td>Unqualified provider (quack, informal provider)</td>
+                <td><input type="checkbox" name="whereWasTheChildTreated" value="Unqualified provider (quack, informal provider) " ></td>
+            </tr>
+            <tr><td></td>
+                <td>Traditional healer </td>
+                <td><input type="checkbox" name="whereWasTheChildTreated" value="Traditional heale" ></td>
+            </tr>
+    </table>
+
+
+<table class="third" align="center" padding="10px" cellpadding="10">
+    <tr><td><center>D. Probable cause of death</center></td></tr></table>
+    <table align="center" padding="25px" cellpadding="10">
+        <tr><td>1)</td>
+            <td>Diarhoea:</td>
+            <td><input type="checkbox" name="probableCauseOfDeath" value="Diarhoea"></td>
+        </tr>
+        <tr><td>2)</td>
+            <td>Pneumonia:</td>
+            <td><input type="checkbox" name="probableCauseOfDeath" value="Pneumonia"></td>
+        </tr>
+        <tr><td>3)</td>
+            <td>Malaria:</td>
+            <td><input type="checkbox" name="probableCauseOfDeath" value="Malaria"></td>
+        </tr>
+        <tr><td>4)</td>
+            <td>Measles:</td>
+            <td><input type="checkbox" name="probableCauseOfDeath" value="Measles"></td>
+        </tr>
+        <tr><td>5)</td>
+            <td>Septicemia (Infection):</td>
+            <td><input type="checkbox" name="probableCauseOfDeath" value="Septicemia"></td>
+        </tr>
+        <tr><td>6)</td>
+            <td>Meningitis:</td>
+            <td><input type="checkbox" name="probableCauseOfDeath" value="Meningitis"></td>
+        </tr>
+        <tr><td>7)</td>
+            <td>Injury:</td>
+            <td><input type="checkbox" name="probableCauseOfDeath" value="Injury"></td>
+        </tr>
+        <tr><td>8)</td>
+            <td>Any Other Cause</td>
+            <td><textarea name="probableCauseOfDeath" placeholder="Type...." ></textarea></td>
+        </tr>
+        <tr><td>9)</td>
+            <td>No Identifiable Cause:</td>
+            <td><input type="checkbox" name="probableCauseOfDeath" placeholder="Type.." value="No Identifiable Cause"></td>
+        </tr>
+    </table>
+
+<table class="third" align="center" padding="10px" cellpadding="10">
+    <tr><td><center>According to the respondent (parent, close family member), what was the cause of death?</center></td></tr></table>
+    <table align="center" padding="25px" cellpadding="20">
+        <tr>
+            <td><textarea  rows="6" cols="110" placeholder="Type to text..." name="causeOfDeath"></textarea></td>
+        </tr>
+    </table>
+
+    <table class="third" align="center" padding="10px" cellpadding="10">
+    <tr><td><center>E. At which level do you think the delay occurred?</center></td></tr></table>
+    <table align="center" padding="25px" cellpadding="20">
+        <tr>
+            <td><b>1.Delay at home</b> (eg; seriousness of illness not recognized, treatment not sought, treatment sought at a late stage, family members did not allow treatment seeking)</td>
+            <td><input type="checkbox" name="delayOccurred" value="home"></td>
+        </tr>
+        <tr>
+            <td><b>2.Delay in transportation</b> (eg; transport facility not available, could not afford local transport, difficult /hilly terrain, long distance to the health facility)</td>
+            <td><input type="checkbox" name="delayOccurred" value="transportation"></td>
+        </tr>
+        <tr>
+            <td><b>3.Delay at facility level </b>  (eg; doctor/staff not available, drugs & equipment not available, delay in initiation of treatment)</td>
+            <td><input type="checkbox" name="delayOccurred" value="facility"></td>
+        </tr>
+    </table>
+
+    <table class="third" align="center" padding="10px" cellpadding="10">
+    <tr><td><center>F. Based on your analysis of the situation in which the death took place, what according to you could have been done to avert this death?</center></td></tr></table>
+    <table align="center" padding="25px" cellpadding="20">
+        <tr>
+            <td>Based on your analysis of the situation in which the death took place, what according to you could have been done to avert this death?</td>
+            <td><textarea name="avertDeath" rows="8" cols="30" placeholder="Type to text..."></textarea></td>
+        </tr>
+    </table>
+    </div>
+    <!--<form action="action.php">-->
+        <span><center><br><input type="submit" class="submit" value="Submit"></center></span>
+    </form>
+<script src="2a.js">
+</script>
+<script src="2aa.js">
+</script>
+</body>
+
+</html>

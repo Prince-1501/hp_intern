@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4.3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container-fluid">
+	<div class="firstt43">
+		<p><center>Social Autopsy Format</center><br>
+	</div>
+
+	<table align="center" padding="10px" cellpadding="10">
+		<tr><td>Reference ID </td>
+			<td><input type="text" name="refernceId" placeholder="Reference ID"></td></td></tr>
+		<tr><td>MCTS number</td>
+			<td><input type="text" name="mctsNumber" placeholder="MCTS number"></td></tr>
+	</table>
+
+	<table class="third" align="center" padding="10px" cellpadding="10">
+		<tr><td><center>A.	Background Information</center></td></tr></table>
+
+	<table align="center" padding="10px" cellpadding="10">
+		<tr><td>1)	Name of key Informant</td>
+			<td><input type="text" name="keyInformant" placeholder="key Informant"></td>
+		</tr>
+
+		<tr><td>2)	Telephone / Mobile Number</td>
+			<td><input type="number" name="mobileNumber" placeholder="Mobile Number"></td>
+		</tr>
+
+		<tr><td>3) Total Number of family members of deceased</td>
+			<td><input type="number" name="numberOfFamilyMembersOfDeceased" placeholder="Number of members"></td>
+		</tr>
+
+			<tr><td>4) Number of children < 5 years</td>
+			<td><input type="text" name="numberOfChildren<5Years" placeholder="Number of children"></td></td></tr>
+
+		<tr><td>5) Caste</td>
+			<td><input type="text" name="caste" placeholder="Caste"></td></tr>
+
+			<tr><td>6) Religion</td>
+			<td><input type="text" name="religion" placeholder="Religion"></td></tr>
+
+			<tr><td>7) Do you have Below Poverty Line (BPL) card:    </td>
+			<td><input type="text" name="bplCard" placeholder="yes/No"></td></tr>
+		</table>
+
+			<table class="third" align="center" padding="10px" cellpadding="10">
+			<tr><td><center>B. Treatment Seeking History</center></td></tr></table>
+
+			<table align="center" padding="10px" cellpadding="10">
+				<tr>
+					<th>9) During the illness that led to the death, did you seek care outside the home for the infant?</th>
+					<td>
+					<select id="one" name="duringIllnessYouSeekCareOutsideTheHome">
+					<option value="null">--Select--</option>
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+					<option value="dnk">DNK</option></select></td></tr>
+
+					<tr><td> If 'No' then ASK   'What were the reasons for not seeking care?'</td></tr>
+					<tr><td>9.1) Did not think that the illness was serious</td>
+						<td>
+							<select disabled="disabled" id="two" name="illnessSerious">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+						<tr><td>9.2)Money not available for treatment</td>
+						<td>
+							<select disabled="disabled" id="three" name="moneyNotAvailable">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>9.3) Family members were not able to accompany</td>
+						<td>
+							<select disabled="disabled" id="four" name="familyNotAbleAccompany">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>9.4) Bad weather</td>
+						<td>
+							<select disabled="disabled" id="five" name="badWeather">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>9.5) Did not know where to take the infant </td>
+						<td>
+							<select disabled="disabled" id="six" name="didnotAboutInfant">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>9.6) No hope for survival of the infant</td>
+						<td>
+							<select disabled="disabled" id="seven" name="noHopeForSurvival">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>9.7) Transport not available</td>
+						<td>
+							<select disabled="disabled" id="eight" name="transportNotAvailable">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>9.8) Others (specify)</td>
+								<td><textarea disabled="disabled" id="nine" rows="2" columns="2" placeholder="Type..." name="others" ></textarea></td>
+
+								<tr><th>10) If "Yes," for the question 4, then ASK Where or from whom did you seek care?  </th></tr>
+								<tr><td>10.1) Quack / informal service providers</td>
+							<td>
+							<select disabled="disabled" id="ten" name="quack">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>10.2) Traditional healer/ Religious healer</td>
+						<td>
+							<select disabled="disabled" id="eleven" name="traditionalHealer">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>10.3) Subcentre</td>
+						<td>
+							<select disabled="disabled" id="twelve" name="subCentre">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+								<tr><td>10.4) PHC </td>
+						<td>
+							<select disabled="disabled" id="thirteen" name="phc">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>10.5) CHC</td>
+								<td>
+							<select disabled="disabled" id="fourteen" name="chc">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>10.6) Sub-district  hospital</td>
+						<td>
+							<select disabled="disabled" id="fifteen" name="subDistrictHospital">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>10.7) District (Govt.) Hospital</td>
+						<td>
+							<select disabled="disabled" id="sixteen" name="districtGovtHospital">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+								<tr><td>10.8) Private allopathic doctor </td>
+						<td>
+							<select disabled="disabled" id="seventeen" name="privateAllopathicDoctor">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>10.9) Doctors in alternate system of medicine</td><td>
+							<select disabled="disabled" id="eighteen" name="doctorsAlternateSystem">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>10.10) Reason for seeking care from there: </td>
+								<td><textarea disabled="disabled" id="nineteen" rows="2" columns="2" placeholder="Type..." name="reason" ></textarea></td><br>
+
+						<table align="center" padding="10px" cellpadding="10">
+							<tr><td>11) Did ASHA/ AWW/ VHN/ ANM advice on hospital treatment?</td><td>
+							<select name="ashaAdviceHospitalTreatment">
+							<option value="null">--Select--</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							<option value="dnk">DNK</option></select></td></tr>
+
+							<tr><td>12) What was the condition of the infant at the time when it was decided for medical consultation?<br>(Tick if any of the condition mentioned in the options is present) </td><td>
+							<select name="conditionWhenMedical">
+							<option value="null">--Select--</option>
+							<option value="Active">Alert / Active / feeding</option>
+							<option value="Inactive">Conscious but Drowsy / Inactive / Unable to feed</option>
+							<option value="Unconscious">Unconscious</option></select></td></tr>
+						</table>
+
+						<table align="center" padding="10px" cellpadding="10">
+							<tr><td>
+								13) Problems faced by the parents in getting treatment in the health facility:
+ 									<br>
+ 										Now I will ask you questions related to problems you might have faced in getting the treatment from various health facilities. 
+
+							</td></tr>
+						</table>
+<table align="center" padding="10px" cellpadding="10">
+  <tr>
+    <th></th>
+    <th>Details</th>
+    <th>First Health Facility</th> 
+    <th>Referral Institution I</th>
+    <th>Referral Institution II</th>
+    <th>Referral Institution III</th>
+  </tr>
+  <tr>
+    <td>13.1)</td>
+    <td>Specify in which hospital you took the baby first and then where was the baby taken thereafter? (Name, type of the Institution/ hospital/ health centre)</td>
+    <td><textarea rows="4" columns="2" placeholder="Type..." name="firstHospital" ></textarea></td>
+    <td><textarea rows="4" columns="2" placeholder="Type..." name="secondHospital" ></textarea></td>
+    <td><textarea rows="4" columns="2" placeholder="Type..." name="thirdHospital" ></textarea></td>
+    <td><textarea rows="4" columns="2" placeholder="Type..." name="fourthHospital" ></textarea></td>
+  </tr>
+  <tr>
+    <td>13.2)</td>
+    <td>Specify the problem / complication with which baby was taken to this facility</td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="problem" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="problem" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="problem" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="problem" ></textarea></td>
+  </tr>
+
+  <tr>
+    <td>13.3)</td>
+    <td>Total time taken from the onset of the problem to reach this facility</td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="timeTaken" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="timeTaken" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="timeTaken" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="timeTaken" ></textarea></td>
+  </tr>
+  <tr>
+    <td>13.4)</td>
+    <th>Type of treatment received in the institution/ hospital</th>
+    </tr>
+
+  </tr>
+  <tr>
+    <td></td>
+    <td>NIL</td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="nil" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="nil" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="nil" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="nil" ></textarea></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>First Aid</td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="firstAid" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="firstAid" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="firstAid" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="firstAid" ></textarea></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Others ( Specify)..</td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="other" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="other" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="other" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="other" ></textarea></td>
+  </tr>
+   <tr>
+    <td>13.5)</td>
+    <td><b>Specify the reasons for referring to another institution</b> </td>
+    <td colspan="4"></td></tr>
+
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lack of Specialists</td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="lackOfSpecialists" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="lackOfSpecialists" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="lackOfSpecialists" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="lackOfSpecialists" ></textarea></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lack of Equipments</td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="lackOfEquipments" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="lackOfEquipments" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="lackOfEquipments" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="lackOfEquipments" ></textarea></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Others ( Specify)..</td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="others" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="others" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="others" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="others" ></textarea></td>
+  </tr>
+ 
+  <tr>
+    <td>13.6)</td>
+    <td>Mode of transport from one institution to other (Government ) and distance in KMs</td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="transportModeInGovt" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="transportModeInGovt" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="transportModeInGovt" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="transportModeInGovt" ></textarea></td>
+</tr>
+
+    <tr>
+    <td>13.7)</td>
+    <td>Mode of transport from one institution to other (Private ) and distance in KMs</td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="transportModeInPrivate" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="transportModeInPrivate" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="transportModeInPrivate" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="transportModeInPrivate" ></textarea></td>
+</tr>
+
+    <tr>
+    <td>13.8)</td>
+    <td>If baby was taken to any institution other than referred, state the reasons </td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="reasonForOtherInstitution" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="reasonForOtherInstitution" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="reasonForOtherInstitution" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="reasonForOtherInstitution" ></textarea></td>
+</tr>
+
+      <tr>
+    <td>13.9)</td>
+    <td>If baby was taken to any institution other than referred, who took this decision (eg; doctor, caregivers, relatives etc.) </td>
+    <td><textarea rows="3" columns="2" placeholder="Type..." name="reasonForOtherInstitutionDecision" ></textarea></td>
+    <td><textarea rows="3" columns="2" placeholder="Type..." name="reasonForOtherInstitutionDecision" ></textarea></td>
+    <td><textarea rows="3" columns="2" placeholder="Type..." name="reasonForOtherInstitutionDecision" ></textarea></td>
+    <td><textarea rows="3" columns="2" placeholder="Type..." name="reasonForOtherInstitutionDecision" ></textarea></td>
+</tr>
+
+    <tr>
+    <td>13.10)</td>
+    <td>Time taken to initiate treatment in the institution on reaching the hospital </td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="timeTakenForTreatment" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="timeTakenForTreatment" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="timeTakenForTreatment" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="timeTakenForTreatment" ></textarea></td>
+</tr>
+
+
+   <tr>
+    <td>13.11)</td>
+    <td><b>Reasons for the delay in initiating treatment (Use your judgment in arriving the reasons)<</td>
+    <td colspan="4"></td></tr>
+    <tr>
+      <td></td>
+      <td>informal payment</td>
+      <td><textarea rows="1" columns="2" placeholder="Type..." name="informalPayment" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="informalPayment" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="informalPayment" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="informalPayment" ></textarea></td>
+  </tr>
+
+      <tr>
+      <td></td>
+      <td>mobilizing specialists</td>
+      <td><textarea rows="1" columns="2" placeholder="Type..." name="mobilizingSpecialists" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="mobilizingSpecialists" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="mobilizingSpecialists" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="mobilizingSpecialists" ></textarea></td>
+  </tr>
+
+      <tr>
+      <td></td>
+      <td>paramedical workers not available</td>
+      <td><textarea rows="2" columns="2" placeholder="Type..." name="workersNotAvailable" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="workersNotAvailable" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="workersNotAvailable" ></textarea></td>
+    <td><textarea rows="2" columns="2" placeholder="Type..." name="workersNotAvailable" ></textarea></td>
+  </tr>
+
+      <tr>
+      <td></td>
+      <td>Too much patient rush</td>
+      <td><textarea rows="1" columns="2" placeholder="Type..." name="patientRush" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="patientRush" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="patientRush" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="patientRush" ></textarea></td>
+  </tr>
+
+      <tr>
+      <td></td>
+      <td>doctor not available</td>
+      <td><textarea rows="1" columns="2" placeholder="Type..." name="doctorNotAvailable" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="doctorNotAvailable" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="doctorNotAvailable" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="doctorNotAvailable" ></textarea></td>
+  </tr>
+
+      <tr>
+      <td></td>
+      <td>investigations could not be done</td>
+      <td><textarea rows="1" columns="2" placeholder="Type..." name="investigationsNotDone" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="investigationsNotDone" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="investigationsNotDone" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="investigationsNotDone" ></textarea></td>
+  </tr>
+
+      <tr>
+      <td></td>
+      <td>other problem ( specify.) </td>
+      <td><textarea rows="1" columns="2" placeholder="Type..." name="otherProblem" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="otherProblem" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="otherProblem" ></textarea></td>
+    <td><textarea rows="1" columns="2" placeholder="Type..." name="otherProblem" ></textarea></td>
+  </tr>
+</table>
+
+<table align="center" padding="10px" cellpadding="10"><tr>
+		<th colspan="2">14) If the baby was shown as having been discharged against medical advice /absconded, please get the answers for the following questions from the relatives:</th></tr>
+		<tr><td>14.1) Why the baby was discharged against medical advice? </td></tr>
+		<tr><td><textarea rows="1" columns="10" placeholder="Type....." name="dischargedAgainstMedicalAdvice"></textarea></td></tr>
+	<tr>
+		<td>14.2) Please narrate the circumstances leading to the discharge of the baby against medical advice/ left against medical advice /absconded.</td></tr>
+		<tr><td><textarea rows="2" columns="10" placeholder="Type....." name="circumstancesDischargeBaby"></textarea></td></tr>
+
+		<tr>
+			<td>14.3) Whether relatives were aware of the discharge of the baby and whether the discharge was on the request of the relatives or on the advice of the doctor / paramedical person(specify) ? </td></tr><tr>
+			<td><textarea rows="2" columns="10" placeholder="Type....." name="dischargeOnBehalf"></textarea></td>
+		</tr>
+		<tr>
+			<td>14.4) Whether baby died before discharge? </td>
+			<td>
+				<select name="babyDiedBeforeDischarge">
+					<option value="null">--Select--</option>
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+					<option value="dnk">Don’t know</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>14.5) Was the discharge due to the dissatisfaction of the treatment given in the hospital?</td>
+			<td>
+				<select name="14.5)dischargeDueDissatisfactionTreatment">
+					<option value="null">--Select--</option>
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+					<option value="dnk">Don’t know</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>14.6) Any other reason for discharge against medical advice? Specify</td></tr>
+			<td><textarea rows="2" columns="10" placeholder="Type....." name="reasonAgainstdischargedMedicalAdvice"></textarea></td>
+		</tr>
+</table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+		<tr><td><center>C.	Brief Social History of the family</center></td></tr></table>
+		<table align="center" padding="10px" >
+			<tr><th>17) Awareness of mother & family members about treatment Seeking</th></tr>
+			<tr><td>17.1) Do you know the danger signs when a newborn or infant should be taken to health facility?</td>
+				<td>
+					<select name="dangerSignsWhenNewborn ?">
+						<option value="null">--Select--</option>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+				</td></tr>
+				<tr><td>
+					17.2)If yes, list them:
+				</td><td>
+					<input type="checkbox" name="preTerm">Pre-term<br>
+					<input type="checkbox" name="lbw">LBW<br>
+					<input type="checkbox" name="NoCryAtBirth"> No cry at birth<br>
+					<input type="checkbox" name="fits">Fits<br>
+					<input type="checkbox" name="drowsiness">Drowsiness/inactivity/ unconsciousness<br>
+					<input type="checkbox" name="jaundice">Jaundice<br>
+					<input type="checkbox" name=" diarrhoea"> Diarrhoea<br>
+					<input type="checkbox" name="refusalToFeed">Refusal to feed<br>
+					<input type="checkbox" name=" fastBreathing"> Fast Breathing<br>
+					<input type="checkbox" name=" highGradeFever"> High grade fever<br>
+				</td></tr>
+				<tr>
+					<td>17.3) Do you know about  any hospital where newborns/ infants/children can be admitted and treated?</td>
+					<td>
+						<select name="doyouKnowHospitalWhereNewbornTreated?">
+							<option value="null">--Select--</option>
+							<option value="yes">YES</option>
+							<option value="no">NO</option>
+						</select>
+					</td>
+				</tr>
+				<tr><td>17.4) If yes, then please name these facilities </td>
+				<td><textarea rows="2" columns="10" placeholder="Type....." name="nameOfHospital"></textarea></td></tr>
+		</table>
+		<table class="third" align="center" padding="10px" cellpadding="10">
+		<tr><td><center>D. Expenditure History</center></td></tr></table>
+
+		<table align="center" padding="10px" cellpadding="10">
+			<tr><th>18) Can you tell us regarding the total amount that you had to spend on your child? </th></tr><tr>
+			<td>1.	Treatment (medicines, consultation, home treatment etc.)</td>
+			<td><input type="number" name="treatment" placeholder="...."></td></tr>
+			<tr><td>2.	Transport</td>
+				<td><input type="number" name="transport" placeholder="...."></td></tr>
+				<tr><td>3. Others</td>
+					<td><input type="number" name="others" placeholder="...."></td></tr>
+					<tr><td>Total</td>
+						<td><input type="number" name="total" placeholder="...."></td></tr>
+		</table>
+		<table align="center" padding="10px" cellpadding="10">
+			<tr><td>19) How did you (the family) arrange this money?</td>
+			<td>
+				<input type="checkbox" name="availableSavings">Available/Savings<br>
+					<input type="checkbox" name="borrowed">Borrowed<br>
+					<input type="checkbox" name="soldAssets">Sold assets<br>
+					<input type="checkbox" name="communityFund">Community fund<br>
+					<input type="checkbox" name="govtScheme">Govt. scheme<br>
+					<input type="checkbox" name="other">Other<br>
+					<input type="checkbox" name="don’tKnow">Don’t know<br>
+
+			</td></tr>
+		</table>
+
+<script src="script1.js"></script>
+ <form action="">
+        <span><center><br><input type="submit" class="submit" value="Submit"></center></span>
+</form>
+</div>
+</body>
+</html>

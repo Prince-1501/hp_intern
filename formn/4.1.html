@@ -1,0 +1,1039 @@
+<html>
+<head>
+	<title>4.1</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form action="update" method=POST>
+	<div class="container-fluid">
+	<div class="first41">
+		<p><center>Name and Address of the facility where death occured</center><br>
+	</div>
+	<table class="third" align="center" padding="10px" cellpadding="10">
+	<tr><td><center>DETAILS OF DECEASED</center></td></tr></table>    
+	<table align="center" padding="10px" cellpadding="10">
+<tr>
+	<td width="20%">Impatient Number/ID:</td>
+	<td><input type="text" placeholder="Impatient ID" name="iD" required></td>
+</tr>
+<tr>
+<td>Age:</td>
+<td>Days:<select name="days">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>3</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select></td>
+</tr><tr>
+	<td>SEX:</td>
+ 	<td><input type=radio name="sex" value="male">Male
+        <input type=radio name="sex" value="female">FeMale
+    </td></tr>
+<tr><td>Name Of The Child:</td>
+	<td><input type="text" placeholder="Child Name" name="nameOfTheChild" required></td>
+</tr>
+<tr><td>Name Of The Mother:</td>
+	<td><input type="text" placeholder="Mother Name" name="nameOfTheMother" required></td>
+</tr>
+<tr><td>Address:</td>
+   	<td><input type="pincode" name="pincode" placeholder="Pincode">
+    <input type="name" name="district" placeholder="District" required>
+    <input type="name" name="state" placeholder="State" required>
+    <input type="name" name="houseNumber" placeholder="House Number" required>
+    <input type="name" name="locality" placeholder="Locality" required>
+</td></tr>
+<tr><td>Date of Birth:</td>
+	<td><input type="date" name="dateOfBirth"></td>
+</tr>
+<tr><td>Place of Birth:</td>
+	<td><input type=radio name="placeOfBirth" value="Health facilty">Health Facilty
+        <input type=radio name="placeOfBirth" value="home">Home
+    </td></tr>
+<tr>
+	<td>Birth Weight:</td>
+	<td>Available on record?
+		<select id="one" name="availableOnRecord">
+        <option value="null">--Select yes or no--</option>
+        <option value="Yes">Yes</option>
+		<option value="No">No</option>
+		</select>
+		<input disabled="disabled" id="two" name="two" type="text" placeholder="Upto 2 decimal places in kgs">
+		</td></tr>
+<tr>
+	<td>Date of Admission:</td>
+	<td><input type="date" name="dateOfAdmission"></td>
+</tr>
+<tr>
+	<td>Time of Admission:</td>
+  	<td><input type="time" name="timeOfAdmission"></td>
+</tr>
+<tr>
+	<td>Death Certified by:</td>
+	<td><input type="text" name="nameOfTheDoctor" placeholder="Doctor Name">
+		<input type="text" name="desginationOfTheDoctor" placeholder="Designation">
+	</td>
+</tr>
+</table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+	<tr><td><center>Type of facilty where death took place</center></td></tr></table> 
+<table align="center" padding="10px" cellpadding="10">
+	<tr>
+		<td><b>Type of facilty where death took place:</b></td></tr>
+		<td><input type=radio name=typeOfFacilty value="Sub district hospital/Taluq hospital">Sub district hospital/Taluq hospital<br></td>
+	</tr><tr>
+		<td><input type=radio name=typeOfFacilty value="CHC">CHC<br></td>
+	</tr><tr>
+		<td><input type=radio name=typeOfFacilty value="DH">DH<br></td>
+	</tr><tr>
+		<td><input type=radio name=typeOfFacilty value="DH">DH<br></td>
+	</tr><tr>
+		<td><input type=radio name=typeOfFacilty value="Referral Hospital">Referral hospital<br></td>
+	</tr><tr>
+		<td><input type=radio name=typeOfFacilty value="Medical college/tertiary hospital">Medical college/tertiary hospital<br></td>
+	</tr>
+</table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+	<tr><td><center>Main complaints at the time of admission</center></td></tr></table> 
+<table align="center" padding="25px" cellpadding="10">
+		<tr>
+			<th>Main complaints at the time of admission</th>
+			<th>Duration</th>
+		</tr>
+		<tr>
+			<td>Inability To Feed</td>
+			<td><select name="inabilityToFeed">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select>
+<br></td></tr>
+<tr>
+	<td>Fever:</td>
+	<td><select name="fever">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select>
+<br></td></tr>
+<tr>
+	<td>Loose Stools</td>
+	<td><select name="looseStools">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select><br></td></tr>
+<tr>
+	<td>Vomiting</td>
+	<td><select name="vomiting">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select><br>
+</td></tr><tr>
+	<td>Fast breathing</td>
+	<td><select name="fastBreathing">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select>
+<br>
+		</td>
+		</tr>
+		<tr>
+			<td>Convulsions</td>
+			<td><select name="convulsions">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select>
+<br>
+		</td>
+		</tr>
+		<tr>
+			<td>Appearance of Skin rashes</td>
+			<td><select name="appearanceOfSkinRashes">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select><br></td>
+		</tr>
+		<tr>
+			<td>Injury (like fractures, wounds)</td>
+			<td><select name="injury">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select><br></td>
+		</tr>
+
+		<tr>
+			<td>Lethargy</td>
+			<td><select name="lethargy">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select><br></td>
+		</tr>
+
+				<tr>
+			<td>Stiffness of neck</td>
+			<td><select name="stiffnessOfNeck">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select><br></td>
+		</tr>
+
+				<tr>
+			<td>Bluish discolouration of lips,nails</td>
+			<td><select name="bluishDiscolourationOfLips,Nails">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select><br></td>
+		</tr>
+
+				<tr>
+			<td>Skin pustules of yellowish colour</td>
+			<td><select name="skinPustulesOfYellowishColour">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+</select><br></td>
+		</tr><tr>
+			<td>Any other symptom</td>
+			<td><textarea rows="3" cols="35" placeholder="Type..." name="anyOtherSymptom"></textarea></td>
+		</tr>
+		<tr>
+			<td>Weight on admission:</td>
+			<td><input type="text" placeholder="Upto 2 decimal places"> kgs</td>
+		</tr>
+		<tr>
+			<td>Immunisation history:</td>
+			<td>
+				<input type=checkbox name="immunisationHistory" value="BCG">BCG
+				<input type=checkbox name="immunisationHistory" value="OPV Birth Dose">OPV Birth Dose
+				<input type=checkbox name="immunisationHistory" value="Hepatitis B birth Dose">Hepatitis B birth Dose
+			</td></tr></table>
+
+<table class="third" align="center" padding="10px" cellpadding="10">
+	<tr><td><center>Condition on Admission</center></td></tr></table>
+<table align="center" padding="25px" cellpadding="10">
+		<tr>
+			<th>Breathing:</th>
+			<td><input type=radio name=breathing value="Normal Breathing">Normal Breathing<br>
+			<input type=radio name=breathing value="Severe chest in drawing">Severe Chest in Drawing<br>
+			<input type=radio name=breathing value="Apoenic episodes">Apoenic episodes<br>
+			<input type=radio name=breathing value="Central cyanosis">Central cyanosis<br>
+			<input type=radio name=breathing value="Not breathing or gasping">Not Breathing or Gasping<br>
+			</td> </tr><tr>
+			<th>Consciousness:</th><td>
+			<input type=radio name="consciousness" value="Alert, responds to normal stimuli">Alert, responds to normal stimuli<br>
+			<input type=radio name="consciousness" value="Semi-conscious, responds to painful stimuli">Semi-conscious, responds to painful stimuli <br>
+			<input type=radio name="consciousness" value="High pitched cry or Persistent crying">High pitched cry or Persistent crying<br>
+			<input type=radio name="consciousness" value="Lethargic">Lethargic<br>
+			<input type=radio name="consciousness" value="Inability to suck">Inability to suck<br>
+			<input type=radio name="consciousness" value="Unconscious ">Unconscious <br>
+			</td>
+		</tr></table>
+
+<table class="third" align="center" padding="10px" cellpadding="10">
+	<tr><td><center>Circulation</center></td></tr></table>
+<table align="center" padding="10px" cellpadding="10">
+   		<tr>
+   			<th> Capillary refill time </th> 
+		<td>
+			<input type=radio name="capillaryRefillTime" value="Less than 3 seconds">Less than 3 seconds<br>
+			<input type=radio name="capillaryRefillTime" value="Greater than 3 seconds">Greater than 3 seconds
+		</td> 
+	</tr>
+	<tr>
+   			<th>Extremities</th> 
+			<td><input type=radio name=extremities value="Warm to touch">Warm to touch<br>
+			<input type=radio name=extremities value="Colder than the abdomen">Colder than the abdomen
+		</td>
+	</tr>
+	<tr>
+   			<th>Weak And Fast Pulse</th> 
+			<td><input type=radio name="weakAndFastPulse" value="Greater than 1">Greater than 1<br>
+			<input type=radio name="weakAndFastPulse" value="Greater than 2">Greater than 2<br>
+			<input type=radio name="weakAndFastPulse" value="Greater than 3">Greater than 3
+		</td>
+	</tr>
+	<tr>
+		<th>Other Symptoms</th>
+<td><input type=checkbox name="otherSymptoms" value="Dehydration">Dehydration<br>
+<input type=checkbox name="otherSymptoms" value="Bleeding">Bleeding<br>
+<input type=checkbox name="otherSymptoms" value="Icterus">Icterus<br>
+<input type=checkbox name="otherSymptoms" value="Petechial rashes or bruising">Petechial rashes or bruising<br>
+<input type=checkbox name="otherSymptoms" value="Trauma or other urgent surgical condition">Trauma or other urgent surgical condition<br>
+<input type=checkbox name="otherSymptoms" value="Congenital malformation">Congenital malformation<br>
+<input type=checkbox name="otherSymptoms" value="Bulging fontanelle">Bulging fontanelle<br>
+<input type=checkbox name="otherSymptoms" value="Hypothermia">Hypothermia<br>
+<input type=checkbox name="otherSymptoms" value="Hypethermia">Hypethermia<br>
+<input type=checkbox name="otherSymptoms" value="Sclerema">Sclerema<br>
+</td></tr>
+	<tr>
+<th>Duration of Stay in the healthy facility</th>
+<td><input type=radio name="durationOfStayInTheHealthyFacility" value="<48 hours">48 hours<br>
+<input type=radio name="durationOfStayInTheHealthyFacility" value="48 hours-7 days">48 hours-7 days<br>
+<input type=radio name="durationOfStayInTheHealthyFacility" value="8-14 days">8-14 days<br>
+<input type=radio name="durationOfStayInTheHealthyFacility" value="14-21 days">14-21 days<br>
+<input type=radio name="durationOfStayInTheHealthyFacility" value="More than 21 days">More than 21 days<br>
+</td></tr></table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+		<tr><td><center>Investigations(note down the results)</center></td></tr></table>
+<table align="center" padding="10px" cellpadding="10">
+   		<tr>
+   			<td>Blood glucose</td> 
+			<td><input type="text" name="bloodGlucose">
+		</td>
+	</tr>
+	<tr>
+   			<td>CBC</td> 
+			<td><input type="text" name="cbc">
+		</td>
+	</tr>
+	<tr>
+		<tr>
+   			<td>Sepis screen</td> 
+			<td><input type="text" name="sepisScreen">
+		</td>
+	</tr>
+	<tr>
+		<tr>
+   			<td>CRP</td> 
+			<td><input type="text" name="crp">
+		</td>
+	</tr>
+	<tr>
+		<tr>
+   			<td>Renal function tests</td> 
+			<td><input type="text" name="renalFunctionTests">
+		</td>
+	</tr>
+	<tr>
+		<tr>
+   			<td>Liver functions test</td> 
+			<td><input type="text" name="liverFunctionsTest">
+		</td>
+	</tr>
+	<tr>
+		<tr>
+   			<td>CSF</td> 
+			<td><input type="text" name="csf">
+		</td>
+	</tr>
+	<tr>
+		<tr>
+   			<td>S. Bilirubin</td> 
+			<td><input type="text" name="s.bilirubin">
+		</td>
+	</tr>
+	<tr>
+		<tr>
+   			<td>Others(please specify)</td> 
+			<td><input type="text" name="others">
+		</td>
+	</tr>
+</table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+		<tr><td><center>Referral Details</center></td></tr></table>
+<table align="center" padding="10px" cellpadding="10">
+   		<tr>
+   			<td>Was the child referrred from another Centre?</td> 
+			<td>
+				<select id="three" name="wasTheChildReferrredFromAnotherCentre?">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Don't know">Don't know</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Have inter facility referrals been made?</td> 
+			<td>
+				<select id="four" name="haveInterFacilityReferralsBeenMade?">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Don't know">Don't know</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Type of facility from which last referred?</td> 
+			<td>
+				<select disabled="disabled" id="five" name="typeOfFacilityFromWhichLastReferred?">
+					<option value="null">--Select--</option>
+					<option value="24x7 PHC">24x7 PHC</option>
+					<option value="SDH/Rural Hospital/ CHC">SDH/Rural Hospital/ CHC</option>
+					<option value="District Hospital">District Hospital</option>
+					<option value="Private Hospital">Private Hospital</option>
+					<option value="Private clinic">Private clinic</option>
+					<option value="Others">Others</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Have multiple referrals been made?(include both private and public health facilities)</td> 
+			<td>
+				<select id="six" name="haveMultipleReferralsBeenMade?">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Don't know">Don't know</option>
+				</select>	
+		</td>
+	</tr><tr>
+   			<td>How many?</td> 
+			<td>
+				<select disabled="disabled" id="seven" name="howMany?">
+					<option value="null">--Select--</option>
+					<option value="One">One</option>
+					<option value="Two">Two</option>
+					<option value="Three">Three</option>
+					<option value="Four">Four</option>
+					<option value="More than 4">More than 4</option>
+				</select></td></tr>
+</table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+		<tr><td><center>Intrapartum and Postpartum Details (only for inborn babies)</center></td></tr></table>
+<table align="center" padding="10px" cellpadding="10">
+   		<tr>
+   			<td>Onset of labour</td> 
+			<td>
+				<select name="onsetOfLabour">
+					<option value="null">--Select--</option>
+					<option value="Spontaneous">Spontaneous</option>
+					<option value="Induced">Induced</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Gestational age</td> 
+			<td>
+				<select id="eight" name="gestationalAge">
+					<option value="null">--Select--</option>
+					<option value="Term">Term</option>
+					<option value="Preterm">Preterm</option>
+					<option value="Post term">Post term</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+
+		<tr>
+   			<td>Preterm</td> 
+			<td>
+				<select disabled="disabled" id="nine" name="preterm">
+					<option value="null">--Select--</option>
+					<option value="<28 weeks"><28 weeks</option>
+					<option value="28-<38 weeks">28-<38 weeks</option>
+					<option value=">42 weeks">>42 weeks</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Mode of Delivery</td> 
+			<td>
+				<select name="modeOfDelivery">
+					<option value="null">--Select--</option>
+					<option value="Sontaneous Vaginal with episiotomy">Sontaneous Vaginal with episiotomy</option>
+					<option value="Sontaneous Vaginal without episiotomy">Sontaneous Vaginal without episiotomy</option>
+					<option value="Vacuum">Vacuum</option>
+					<option value="Forceps">Forceps</option>
+					<option value="Caesarean section">Caesarean section</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Was there any compilations during labour?</td> 
+			<td>
+				<select name="compilationsDuringLabour?">
+					<option value="null">--Select--</option>
+					<option value="PROM">PROM</option>
+					<option value="Sepsis">Sepsis</option>
+					<option value="Eclampsia">Eclampsia</option>
+					<option value="Obstructed labour">Obstructed labour</option>
+					<option value="Rupture Uterus">Rupture Uterus</option>
+				</select>	
+		<input type="text" name="other" placeholder="other(specify)">
+		</td>
+	</tr>
+	<tr>
+   			<td>Was photograph used?</td> 
+			<td>
+				<select name="wasPhotographUsed?">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Don't know">Don't know</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Birth weight</td> 
+			<td>
+				<input type="text" name="birthWeight" placeholder="Upto 2 decimal places">kgs
+		</td>
+	</tr>
+	<tr>
+   			<td>Resuscitation at birth</td> 
+			<td>
+				<select id="ten" name="resuscitationAtBirth">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Don't know">Don't know</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Who gave resuscitation?</td> 
+			<td>
+				<select disabled="disabled" id="eleven" name="whoGaveResuscitation?">
+					<option value="null">--Select--</option>
+					<option value="Obstetrician">Obstetrician</option>
+					<option value="Paediatrician">Paediatrician</option>
+					<option value="MBBS doctor/">MBBS doctor/</option>
+					<option value="Other specialist">Othe specialist</option>
+					<option value="Staff nurse"></option>
+				</select>
+			<input type="text" name="other" placeholder="other(specify)">
+		</td></tr>
+	<tr>
+   		<td>APGAR Score (if recorded at time of birth)</td> 
+		<td><input type="text" placeholder="Score" name="apgarScore"></td>
+	</tr>
+</table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+	<tr><td><center>Treatment details</center></td></tr></table>
+<table align="center" padding="10px" cellpadding="10">  		
+	<tr>
+   		<td>Resuscitation</td> 
+			<td>
+				<select name="resuscitation">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Temperature(incase of new borns only)</td> 
+			<td>
+				<select name="temperature">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Photography</td> 
+			<td>
+				<select name="photography">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Oxygen use</td> 
+			<td>
+				<select name="oxygenUse">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>IV Fluids</td> 
+			<td>
+				<select name="IVFluids">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Antibiotics</td> 
+			<td>
+				<select name="antibiotics">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Anticonvulsants</td> 
+			<td>
+				<select name="anticonvulsants">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Bronchodilators</td> 
+			<td>
+				<select name="bronchodilators">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Blood Components</td> 
+			<td>
+				<select name="bloodComponents">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Steroids</td> 
+			<td>
+				<select name="steroids">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Antiretroviral drugs</td> 
+			<td>
+				<select name="antiretroviralDrugs">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Vasopressors (Dopamine, dobutamine, vasopressors)</td> 
+			<td>
+				<select name="vasopressors">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Exchange Blood transfusion</td> 
+			<td>
+				<select name="exchangeBloodTransfusion">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Respiratory support (CPAP/Ventilator)</td> 
+			<td>
+				<select name="respiratorySupport">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Surgical interventions</td> 
+			<td>
+				<select name="surgicalInterventions">
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>
+   			<td>Other interventions (provide details)</td> 
+			<td><textarea rows="3" cols="35" name="anyOtherSymptom" placeholder="Type.."></textarea></td></tr></table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+		<tr><td><center>Diagnosis</center></td></tr></table>
+<table align="center" padding="10px" cellpadding="10">
+	<tr>
+   		<td>Please select the appropriate option</td> 
+			<td>
+				<select name="appropriateOption">
+				<option value="null">--Select--</option>
+				<option value="Death was within 24 hours">Death was within 24 hours</option>
+				<option value="Death was in first week(2-7 days)">Death was in first week(2-7 days)</option>
+				<option value="Death was in the late neonatal period">Death was in the late neonatal period</option>
+				</select>	
+		</td>
+	</tr>
+
+	<tr>
+   			<td>Provisional diagnosis at time of death(immediately at the time of death, by the Medical Officer on duty)</td> 
+			<td><textarea rows="3" cols="35" placeholder="Type..." name="provisionalDiagnosisAtTimeOfDeath"></textarea>
+					
+		</td>
+	</tr>
+		<tr>
+   			<td>Probable direct cause of death</td> 
+			<td><textarea rows="3" cols="35" placeholder="Type..." name="probableDirectCauseOfDeath"></textarea>
+					
+		</td>
+	</tr>
+	<tr>
+   			<td>Indirect cause of death</td> 
+			<td><textarea rows="3" cols="35" placeholder="Type..." name="indirectCauseOfDeath"></textarea>
+					
+		</td>
+	</tr>
+   	<tr>
+   			<td>Final Diagnosis(Within one week)(Final Diagnosis by the treating doctor under whose primary care the child was admitted in the hospital)</td> 
+			<td><textarea rows="3" cols="35" placeholder="Type..." name="finalDiagnosis"></textarea>
+					
+		</td>
+	</tr>
+</table>
+<br>
+<span><center><br><input type=submit class="submit" value="Submit"></center></span>
+<script src="4.1.js">
+</script>
+</form></div>
+</body>
+
+</html>

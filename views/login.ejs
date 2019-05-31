@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./views/bootstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="bg" class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 title">
+                    <img class="hpgov" src="hpgovet.jpg" width="200px" height="150px">
+                    <img class="hphm" src="hphmet.jpg" width="200px" height="200px">
+                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: -1px -1px 1px rgb(64, 138, 199),
+                    0px 4px 1px rgba(62, 99, 219, 0.5),
+                    4px 4px 5px rgba(34, 74, 204, 0.7),
+                    0px 0px 7px rgba(43, 67, 199, 0.4); font-size: 5vmin;"><center>H.P. Government</center></h1>
+                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: -1px -1px 1px rgb(64, 138, 199),
+                    0px 4px 1px rgba(62, 99, 219, 0.5),
+                    4px 4px 5px rgba(34, 74, 204, 0.7),
+                    0px 0px 7px rgba(43, 67, 199, 0.4);font-size: 4vmin;"><center>Child Mortality Review System<br>(HPCMRS)</center></h1>
+                </div>
+
+            </div>    
+        </div>
+        <!--<div class="container text-center">-->
+                <nav class="navbar navbar-inverse" style="background-color: rgb(46, 46, 109);">
+                        <div class="container-fluid">
+                          <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="hpcmrs.html">HPCMRS</a>
+                          </div>
+                          <div class="collapse navbar-collapse" id="myNavbar">
+                          <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">LOGIN</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Page 1-1</a></li>
+                                <li><a href="#">Page 1-2</a></li>
+                                <li><a href="#">Page 1-3</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Page 2</a></li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                            <li><a href="auth/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            
+                          </ul>
+                        </div>
+                        </div>
+                      </nav>
+            <div class="row">
+                <div class="col-md-3 form">
+
+                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: -1px -1px 1px rgb(64, 138, 199),
+                    0px 4px 1px rgba(79, 82, 90, 0.5),
+                    4px 4px 5px rgba(82, 84, 92, 0.7),
+                    0px 0px 7px rgba(88, 91, 100, 0.4);"><center>USER LOGIN</center></h1><br>
+                    <form name="loginForm" action="/auth/login" method="POST">
+
+                        
+                        <b>Username:</b>
+                        <input type="text" name="username" id="name" class="form-control" placeholder=" Enter Username">
+                        <p class="nameError" style="color: rgb(5, 3, 105)"></p><br>
+                        <b>Password:</b>
+                        <input type="password" name="password" id="password" class="form-control" placeholder=" Enter Password">
+                        <p class="passError" style="color: rgb(3, 9, 87)"></p><br>
+                        <center><input type="submit" name="submit" class="btn btn-primary" value="LOGIN"></center><br>
+                    </form>
+                    <center><a href="#" style="color:rgb(10, 2, 87);font-size: 120%;font-weight: bold">Forgot Password ?</a></center>
+                </div>
+                
+            </div>
+        </div>
+        <footer class="container-fluid" style="background-color: rgb(82, 188, 214); position: relative; bottom: 0;">
+            <p>
+                <center><u><b>Developed By:</b></u></center>
+                <center>&copy;Students of IIIT UNA, H.P.</center>
+                <center><a href="iiitu.ac.in">@iiitu.ac.in</a></center>
+            </p>
+        </footer>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+            <script type="text/javascript">
+                function Validate(){
+                    var un = $("#name").val();
+                    var pass = $("#password").val();
+
+                    if(un == ""){
+                        $(".nameError").html("Enter Username");
+                    }
+
+                    if(pass == ""){
+                        $(".passError").html("Enter Password");
+                    }
+
+                }
+            </script>
+
+    </body>
+</html>

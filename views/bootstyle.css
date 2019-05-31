@@ -1,0 +1,98 @@
+#bg.container-fluid{
+    background-image: url(white.jpg) repeat center center;
+    /*height: 100vh;
+    background-size: cover;
+    background-position: center;*/
+}
+
+.form{
+    float: none;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(16, 135, 214);
+    padding: 55px 55px 20px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    /*position: absolute*/
+}
+
+
+.form input[type="text"], input[type="password"]{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: #ffffff;
+    width: 100%;
+    height: 10%;
+    color: #ffffff;
+    font-size: 12px;
+}
+.form input[type="submit"]{
+    border: 2px solid white;
+    position: relative;
+    font-weight: bolder;
+    font-size: 120%;
+    color:white;
+
+    background-color:rgb(13, 26, 216);
+    padding:5px 50px 5px 43px;
+}
+
+.title{
+    /*height: 17vh;*/
+    
+    font-style: normal;
+    font-size: 10%;
+    /*font-size: 15px;
+    /*font-size: 2vh;*/
+    color: rgb(246, 244, 248);
+    transition: 0.6s ease;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(18, 2, 54);
+}
+
+.query{
+
+    position: absolute;
+    background-color: rgb(26, 119, 206);
+    line-height: 0.6;
+}
+
+.hpgov {
+    height: 17vh;
+    width : 11vw;
+    float: left;
+    /*width: 155px;
+    height: 105px;*/
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px; 
+    
+}
+
+.hphm {
+    height: 17vh;
+    width : 9vw;
+    float: right;
+    /*width: 105px;
+    height: 105px;*/
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-bottom: 8px;
+}
+
+.hpcmrs{
+    text-align: left;
+    color: black;
+    float: none;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(154, 155, 156);
+    padding: 55px 55px 20px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    /*position: absolute*/
+}
+
