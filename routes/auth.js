@@ -9,6 +9,15 @@ router.get("/register", function (req, res) {
     res.render("register");
 });
 
+router.get("/newregistration", function(req, res){
+    res.render("registration");
+});
+
+router.get("/search", function(req, res){
+    res.render("search");
+});
+
+
 // User Register
 router.post("/register", function (req, res) {
     User.register(new User({ name: req.body.name, username: req.body.username, role:req.body.role, age: req.body.age , gender: req.body.gender}), req.body.password, function (err, user) {
